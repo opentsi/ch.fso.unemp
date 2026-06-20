@@ -1,0 +1,141 @@
+{
+  "country": "ch",
+  "provider": "fso",
+  "dataset": "unemp",
+  "title": {
+    "en": "Unemployed persons according to ILO by sex, nationality and age groups, gross and seasonally adjusted values",
+    "de": "Erwerbslose gemäss ILO nach Geschlecht, Nationalität und Altersgruppen, brutto- und saisonbereinigte Werte. Durchschnittliche Monats-, Quartals- und Jahreswerte",
+    "fr": "Chômeurs au sens du BIT selon le sexe, la nationalité et les groupes d'âges, valeurs brutes et désaisonnalisées. Moyennes mensuelles, trimestrielles et annuelles"
+  },
+  "source_name": {
+    "en": "FSO",
+    "de": "BFS",
+    "fr": "OFS"
+  },
+  "source_url": "https://www.bfs.admin.ch/bfs/de/home/statistiken/arbeit-erwerb/erwerbslosigkeit-unterbeschaeftigung-offene-stellen/erwerbslose-ilo.assetdetail.7206146.html",
+  "dataset_frequency": "Q",
+  "units": {
+    "all": {
+      "en": "Persons",
+      "de": "Personen",
+      "fr": "Personnes"
+    }
+  },
+  "aggregate": {
+    "all": "sum"
+  },
+  "dim_order": [
+    "geo",
+    "sex",
+    "age"
+  ],
+  "hierarchy": {
+    "geo": {
+      "tot": {
+        "ch": {},
+        "ex": {}
+      }
+    },
+    "sex": {
+      "tot": {
+        "men": {},
+        "wom": {}
+      }
+    },
+    "age": {
+      "tot": {
+        "1524": {},
+        "2539": {},
+        "4054": {},
+        "5564": {},
+        "65": {}
+      }
+    }
+  },
+  "labels": {
+    "dimnames": {
+      "geo": {
+        "en": "Origin",
+        "de": "Herkunft",
+        "fr": "Origine"
+      },
+      "sex": {
+        "en": "Sex",
+        "de": "Geschlecht",
+        "fr": "Sexe"
+      },
+      "age": {
+        "en": "Age",
+        "de": "Alter",
+        "fr": "Age"
+      }
+    },
+    "geo": {
+      "tot": {
+        "en": "Total",
+        "de": "Total",
+        "fr": "Total"
+      },
+      "ch": {
+        "en": "Swiss",
+        "de": "Schweizer/innen",
+        "fr": "Suisses et Suissesses"
+      },
+      "ex": {
+        "en": "Foreign",
+        "de": "Ausländer/innen",
+        "fr": "Etrangers et étrangères"
+      }
+    },
+    "sex": {
+      "tot": {
+        "en": "Total",
+        "de": "Total",
+        "fr": "Total"
+      },
+      "men": {
+        "en": "Men",
+        "de": "Männer",
+        "fr": "Hommes"
+      },
+      "wom": {
+        "en": "Women",
+        "de": "Frauen",
+        "fr": "Femmes"
+      }
+    },
+    "age": {
+      "tot": {
+        "en": "Total",
+        "de": "Total",
+        "fr": "Total"
+      },
+      "1524": {
+        "en": "15-24 years",
+        "de": "15-24 Jahre",
+        "fr": "15-24 ans"
+      },
+      "2539": {
+        "en": "25-39 years",
+        "de": "25-39 Jahre",
+        "fr": "25-39 ans"
+      },
+      "4054": {
+        "en": "40-54 years",
+        "de": "40-54 Jahre",
+        "fr": "40-54 ans"
+      },
+      "5564": {
+        "en": "55-64 years",
+        "de": "55-64 Jahre",
+        "fr": "55-64 ans"
+      },
+      "65": {
+        "en": "65+ years",
+        "de": "65+ Jahre",
+        "fr": "65+ ans"
+      }
+    }
+  },
+  "update_checksum": "02384239efc05ac2b27b0033fa6ef364a8b9e659484e3e2597be9946788ab8cb"
+}

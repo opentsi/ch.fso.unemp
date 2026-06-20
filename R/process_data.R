@@ -1,6 +1,6 @@
-#' Process FSO INDPAU Data
+#' Process FSO UNEMP Data
 #'
-#' Fetches all time series in the ch.fso.indpau collection from the KOF
+#' Fetches all time series in the ch.fso.unemp collection from the KOF
 #' Time Series Database and writes each to its key.csv
 #'
 #' @importFrom tsdbapi read_dataset_keys set_config read_ts
@@ -10,13 +10,13 @@
 process_data <- function(key = key) {
   set_config(api_key = key)
 
-  keys <- read_dataset_keys("ch.fso.indpau")
+  keys <- read_dataset_keys("ch.fso.unemp")
   tsl <- read_ts(keys)
 
   out_paths <- lapply(names(tsl), function(k) {
     ts_obj <- tsl[[k]]
     # remove prefix so it matches with current data
-    k <- sub("^ch\\.fso\\.indpau\\.", "", k)
+    k <- sub("^ch\\.fso\\.unemp\\.", "", k)
     print(k)
 
     output_path <- file.path("data-raw", "csv", paste0(k, ".csv"))
