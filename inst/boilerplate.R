@@ -50,3 +50,8 @@ handle_update(key = key)
 library(devtools)
 check()
 document()
+
+
+## Step 9: Build Readme
+
+build_readme()
